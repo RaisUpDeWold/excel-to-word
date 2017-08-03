@@ -1,0 +1,26 @@
+{
+  "name": "excelupload",
+  "version": "1.0.0",
+  "description": "## Tutorial  http://code.ciphertrick.com/2016/06/05/read-excel-files-convert-json-node-js/",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "docxtemplater": "^3.1.4",
+    "exceljs": "^0.5.1",
+    "express": "^4.15.3",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "jszip": "^3.1.3",
+    "multer": "^1.3.0",
+    "path": "^0.12.7",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json-lc": "^0.4.1"
+  }
+}

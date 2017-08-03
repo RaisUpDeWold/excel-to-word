@@ -1,0 +1,42 @@
+h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+section {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  vertical-align: top;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-size: 18px;
+}
+
+input[type="file"] {
+  display: inline-block;
+}
+
+.input_excel_td {
+  padding-bottom: 0px;
+}
+
+textarea {
+  margin-top: 20px;
+  padding: 0px;
+  border: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

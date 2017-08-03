@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Convert Word File with Excel file Inputs</title>
+
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+  <body>
+    <h1 align="center">Convert word file with excel file inputs!</h1>
+    <div align="center">
+      <table>
+        <tr>
+          <td>
+            Input Word File
+            <form id="uploadFormWord" enctype="multipart/form-data" action="uploadInputWord" method="post">
+              <input id="input_word" type="file" name="file" />
+              <span id="inputWordUploadStatus"></span>
+              <input type="submit" value="Upload" name="submit" />
+            </form>
+            <span style="width:100px;"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="input_excel_td">
+            Input Excel File<br/>
+            <form id="uploadForm" enctype="multipart/form-data" action="uploadInputExcel" method="post">
+              <input id="input_excel" name="file" type="file" />
+              <span id="inputExcelUploadStatus"></span>
+              <input type="submit" value="Upload" name="submit">
+            </form>
+            <textarea id="input_excel_data" cols="80" rows="20" disabled></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" id="downloadWord" value="Convert & Download Output File" />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/docxtemplater.js"></script>
+    <script src="js/jszip.js"></script>
+    <script src="js/file-saver.min.js"></script>
+    <script src="js/jszip-utils.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
